@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{D64934DA-E202-4771-86C5-89B92958926B}" SchemaVersion="110">
+	<Switches>
+		<WorkUnit Name="Default Work Unit" ID="{D64934DA-E202-4771-86C5-89B92958926B}" PersistMode="Standalone">
+			<ChildrenList>
+				<SwitchGroup Name="Transition" ID="{741AE8D4-F4E6-4A4B-A79E-F80CEE2521C9}">
+					<PropertyList>
+						<Property Name="UseGameParameter" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Switch Name="Slow" ID="{12C41A0C-5CAD-4FB0-9169-FA68DB06FA59}"/>
+						<Switch Name="Fast" ID="{294D6FE8-E9C4-4384-A1AF-31489BA9F95F}"/>
+						<Switch Name="Mid" ID="{223A845B-9092-4A83-BF7C-62D353A7B658}"/>
+					</ChildrenList>
+					<SwitchOnRTPC>
+						<GameParameterRef Name="Transition" ID="{24CD690F-48AB-4A1E-B999-5C6CECC91949}"/>
+						<Curve Name="" ID="{688FAE29-7B96-42B4-B884-91451D337700}">
+							<PropertyList>
+								<Property Name="Flags" Type="int32" Value="65537"/>
+							</PropertyList>
+							<PointList>
+								<Point>
+									<XPos>0</XPos>
+									<YPos>1</YPos>
+									<Flags>5</Flags>
+								</Point>
+								<Point>
+									<XPos>55.28318</XPos>
+									<YPos>2</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>100</XPos>
+									<YPos>2</YPos>
+									<Flags>37</Flags>
+								</Point>
+							</PointList>
+						</Curve>
+					</SwitchOnRTPC>
+				</SwitchGroup>
+			</ChildrenList>
+		</WorkUnit>
+	</Switches>
+</WwiseDocument>

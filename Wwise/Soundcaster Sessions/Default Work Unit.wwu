@@ -1,6 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{C5226FAE-AA1F-4F5C-9E8D-53DB022F2A66}" SchemaVersion="110">
 	<SoundcasterSessions>
-		<WorkUnit Name="Default Work Unit" ID="{C5226FAE-AA1F-4F5C-9E8D-53DB022F2A66}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{C5226FAE-AA1F-4F5C-9E8D-53DB022F2A66}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundcasterSession Name="New Soundcaster Session" ID="{8AC6DCC6-5913-4617-B938-36FE457E442C}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="Play" ID="{6478CBBC-1E78-4CF8-8C6D-634DEEF41223}" WorkUnitID="{D3FBE4AD-BB4B-4457-9196-929387A946A1}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true">
+						<RTPCValue>
+							<GameParameterRef Name="Transition" ID="{24CD690F-48AB-4A1E-B999-5C6CECC91949}"/>
+							<Value>100</Value>
+						</RTPCValue>
+					</RTPCValueList>
+					<CurrentStateList ShowAll="true"/>
+					<CurrentSwitchList ShowAll="true">
+						<CurrentSwitchRef Name="Fast" ID="{294D6FE8-E9C4-4384-A1AF-31489BA9F95F}"/>
+					</CurrentSwitchList>
+				</SoundcasterSession>
+			</ChildrenList>
+		</WorkUnit>
 	</SoundcasterSessions>
 </WwiseDocument>

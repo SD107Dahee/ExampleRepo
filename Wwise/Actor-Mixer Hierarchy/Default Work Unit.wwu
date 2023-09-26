@@ -5,7 +5,7 @@
 			<ChildrenList>
 				<Folder Name="skate" ID="{FB04E9CF-1805-4145-A278-FDE34E21587C}" ShortID="317392125">
 					<ChildrenList>
-						<SwitchContainer Name="New Switch Container" ID="{4F3B1716-9A03-4880-A59F-8B3854D0194B}" ShortID="379328316">
+						<SwitchContainer Name="Skate" ID="{4F3B1716-9A03-4880-A59F-8B3854D0194B}" ShortID="379328316">
 							<PropertyList>
 								<Property Name="SwitchBehavior" Type="int16" Value="1"/>
 							</PropertyList>
@@ -35,6 +35,11 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="Skateboard,Powerslide" ID="{B6D62851-33F4-483B-B6AC-3CE395186F1F}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="2.40882833333333"/>
+												<Property Name="TrimEnd" Type="Real64" Value="4.81765666666667"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>Skateboard,Powerslide.wav</AudioFile>
 											<MediaIDList>
@@ -57,6 +62,11 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="Sports, Skate, Skateboarding, Rolling 01 SND3084 1" ID="{15AB1631-1530-411B-8650-18F4E9970882}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="5.84329928111994"/>
+												<Property Name="TrimEnd" Type="Real64" Value="12.3987506621264"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>Sports, Skate, Skateboarding, Rolling 01 SND3084 1.wav</AudioFile>
 											<MediaIDList>
@@ -66,28 +76,6 @@
 									</ChildrenList>
 									<ActiveSourceList>
 										<ActiveSource Name="Sports, Skate, Skateboarding, Rolling 01 SND3084 1" ID="{15AB1631-1530-411B-8650-18F4E9970882}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="Sports, Skate, Skateboarding, Rolling 02 SND3085 1" ID="{042421E6-87F7-445A-B3D3-E35B9C1335B9}" ShortID="991345508">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1C29B3CF-236F-43AD-AA54-56A34EE40E71}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FA79DADC-15FB-4EB2-92C3-1ACFA06ACA0C}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="Sports, Skate, Skateboarding, Rolling 02 SND3085 1" ID="{69121B1A-B2A8-4327-B750-5681C2787755}">
-											<Language>SFX</Language>
-											<AudioFile>Sports, Skate, Skateboarding, Rolling 02 SND3085 1.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="158557113"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="Sports, Skate, Skateboarding, Rolling 02 SND3085 1" ID="{69121B1A-B2A8-4327-B750-5681C2787755}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="Skateboard,By,Medium" ID="{01E52086-DB44-47C0-A67D-CC7A0DD60FF2}" ShortID="980388420">
@@ -101,6 +89,11 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="Skateboard,By,Medium" ID="{781F4ADD-0D57-4212-AA21-486F512F1B4F}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="4.9724572455543"/>
+												<Property Name="TrimEnd" Type="Real64" Value="12.0863376844495"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>Skateboard,By,Medium.wav</AudioFile>
 											<MediaIDList>
@@ -134,17 +127,17 @@
 																<PointList>
 																	<Point>
 																		<XPos>0</XPos>
-																		<YPos>-179</YPos>
+																		<YPos>862</YPos>
 																		<Flags>5</Flags>
 																	</Point>
 																	<Point>
-																		<XPos>83.76068</XPos>
-																		<YPos>-71</YPos>
+																		<XPos>59.67213</XPos>
+																		<YPos>321</YPos>
 																		<Flags>0</Flags>
 																	</Point>
 																	<Point>
 																		<XPos>100</XPos>
-																		<YPos>0</YPos>
+																		<YPos>782</YPos>
 																		<Flags>37</Flags>
 																	</Point>
 																</PointList>
@@ -174,7 +167,7 @@
 																<PointList>
 																	<Point>
 																		<XPos>0</XPos>
-																		<YPos>1.29567</YPos>
+																		<YPos>0.51095</YPos>
 																		<Flags>5</Flags>
 																	</Point>
 																	<Point>
@@ -184,7 +177,7 @@
 																	</Point>
 																	<Point>
 																		<XPos>100</XPos>
-																		<YPos>1.18311</YPos>
+																		<YPos>0.40806</YPos>
 																		<Flags>37</Flags>
 																	</Point>
 																</PointList>
@@ -217,13 +210,27 @@
 											<Property Name="ContinuePlay" Type="bool" Value="True"/>
 										</PropertyList>
 									</GroupingBehavior>
-									<GroupingBehavior>
-										<ItemRef Name="Sports, Skate, Skateboarding, Rolling 02 SND3085 1" ID="{042421E6-87F7-445A-B3D3-E35B9C1335B9}"/>
-										<PropertyList>
-											<Property Name="ContinuePlay" Type="bool" Value="True"/>
-										</PropertyList>
-									</GroupingBehavior>
 								</GroupingBehaviorList>
+								<GroupingList>
+									<Grouping>
+										<SwitchRef Name="Slow" ID="{12C41A0C-5CAD-4FB0-9169-FA68DB06FA59}"/>
+										<ItemList>
+											<ItemRef Name="Sports, Skate, Skateboarding, Rolling 01 SND3084 1" ID="{67372D4F-8753-48E0-B74E-36C9FF8FD839}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="Mid" ID="{223A845B-9092-4A83-BF7C-62D353A7B658}"/>
+										<ItemList>
+											<ItemRef Name="Skateboard,By,Medium" ID="{01E52086-DB44-47C0-A67D-CC7A0DD60FF2}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="Fast" ID="{294D6FE8-E9C4-4384-A1AF-31489BA9F95F}"/>
+										<ItemList>
+											<ItemRef Name="Skateboard,Powerslide" ID="{1087B85F-678B-4DB1-B889-3F436080999E}"/>
+										</ItemList>
+									</Grouping>
+								</GroupingList>
 							</GroupingInfo>
 						</SwitchContainer>
 					</ChildrenList>
